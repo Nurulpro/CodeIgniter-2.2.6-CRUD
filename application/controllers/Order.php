@@ -27,13 +27,18 @@ class Order extends CI_Controller {
             }
 
 
-            public function Create(){
-
-                $this->load->view('InsertOrder');       
-            
-            
-            }
+        // for particular recod
+public function getdetails($ODID)
+{
+//loading model
+$this->load->model('OrderRead_Model');
+$reslt=$this->OrderRead_Model->getuserdetail($ODID);
+// Passing Values to update view
+$this->load->view('UpdateOrder',['row'=>$reslt]);
+}
 	}
+
+
 
 
 

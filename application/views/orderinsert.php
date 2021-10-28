@@ -24,16 +24,10 @@
             <?php echo form_input(['name' => 'user_id', 'class' => 'form-control', 'value' => set_value('user_id')]); ?>
             <?php echo form_error('user_id', "<div style='color:red'>", "</div>"); ?>
         </div>
-        <div class="col-md-4"><b>Order Number</b>
-            <?php echo form_input(['name' => 'OrderNumber', 'class' => 'form-control', 'value' => set_value('OrderNumber')]); ?>
-            <?php echo form_error('OrderNumber', "<div style='color:red'>", "</div>"); ?>
-        </div>
+     
     </div>
     <div class="row">
-        <div class="col-md-4"><b>Order Date</b>
-            <?php echo form_input(['name' => 'OrderDate', 'class' => 'form-control', 'value' => set_value('OrderDate')]); ?>
-            <?php echo form_error('OrderDate', "<div style='color:red'>", "</div>"); ?>
-        </div>
+       
         <div class="col-md-4"><b>Product Name</b>
             <?php echo form_input(['name' => 'ProductName', 'class' => 'form-control', 'value' => set_value('ProductName')]); ?>
             <?php echo form_error('ProductName', "<div style='color:red'>", "</div>"); ?>
@@ -41,21 +35,21 @@
     </div>
 
      <div class="row">
-        <div class="col-md-8"><b>Unite Price</b>
+        <div class="col-md-4"><b>Unite Price</b>
             <?php echo form_input(['name' => 'UnitePrice', 'class' => 'form-control', 'value' => set_value('UnitePrice')]); ?>
             <?php echo form_error('UnitePrice', "<div style='color:red'>", "</div>"); ?>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-8"><b>Product Qty</b>
+        <div class="col-md-4"><b>Product Qty</b>
             <?php echo form_input(['name' => 'ProductQty', 'class' => 'form-control', 'value' => set_value('ProductQty')]); ?>
             <?php echo form_error('ProductQty', "<div style='color:red'>", "</div>"); ?>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-8"><b>Total Amount</b>
+        <div class="col-md-4"><b>Total Amount</b>
             <?php echo form_input(['name' => 'TotalAmount', 'class' => 'form-control', 'value' => set_value('TotalAmount')]); ?>
             <?php echo form_error('TotalAmount', "<div style='color:red'>", "</div>"); ?>
         </div>
@@ -63,7 +57,7 @@
 
 
     <div class="row" style="margin-top:1%">
-        <div class="col-md-8">
+        <div class="col-md-4">
             <?php echo form_submit(['name' => 'insert', 'value' => 'Submit']); ?>
         </div>
     </div>

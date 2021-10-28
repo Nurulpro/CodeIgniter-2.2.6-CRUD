@@ -8,4 +8,14 @@ $query=$this->db->select('OrderID,user_id,OrderNumber,OrderDate,ProductName	,Uni
 	}
 
 
+	public function getuserdetail($ODID){
+		$ret=$this->db->select('user_id,ProductName,UnitePrice,ProductQty,TotalAmount,OrderID')
+		              ->where('OrderID',$ODID)
+		              ->get('orders');
+		        return $ret->row();
+	}
+
 }
+
+
+

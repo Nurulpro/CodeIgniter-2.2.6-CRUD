@@ -38,12 +38,9 @@
 |
 */
 
-$route['default_controller'] = "read";
+$route['default_controller'] = "welcome";
 
 $route['orders'] = "Order";
-$route['InsertOrder'] = "Order/Create";
-
-
 
 $route['404_override'] = '';
 

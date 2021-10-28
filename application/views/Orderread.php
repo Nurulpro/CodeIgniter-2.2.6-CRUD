@@ -14,15 +14,27 @@
 <div class="row">
 <div class="col-md-12">
 <h3>Total Order List</h3> <hr />
-<!--- Success Message --->
-<?php if ($this->session->flashdata('success')) { ?>
-<p style="font-size: 20px; color:green"><?php echo $this->session->flashdata('success'); ?></p>
-<?php }?>
-<!---- Error Message ---->
-<?php if ($this->session->flashdata('error')) { ?>
-<p style="font-size: 20px; color:red"><?php echo $this->session->flashdata('error'); ?></p>
- <?php } ?>
 
+        <!--- Success Message --->
+        <?php if ($this->session->flashdata('success')) { ?>
+                <p style="font-size: 20px; color:green"><?php echo $this->session->flashdata('success'); ?></p>
+            <?php } ?>
+
+            <!---- Error Message ---->
+            <?php if ($this->session->flashdata('error')) { ?>
+                <p style="font-size: 20px; color:red"><?php echo $this->session->flashdata('error'); ?></p>
+            <?php } ?>
+
+
+         
+            <a href="<?php echo site_url('insert'); ?>">
+                <button class="btn btn-primary">Create User</button></a>
+
+                <a href="<?php echo site_url('Orderinsert'); ?>">
+                <button class="btn btn-primary">Create Order</button></a>
+
+
+            <div class="table-responsive">
 
 <table id="mytable" class="table table-bordred table-striped">
 <thead>
@@ -57,12 +69,12 @@ foreach($result as $row)
     <td>
 <?php
 //for passing row id to controller
- echo  anchor("Read/getdetails/{$row->OrderID}",' ','class="btn btn-primary btn-xs glyphicon glyphicon-pencil"')?>
+ echo  anchor("Order/getdetails/{$row->OrderID}",' ','class="btn btn-primary btn-xs glyphicon glyphicon-pencil"')?>
 </td>
 <td>
 <?php
 //for passing row id to controller
- echo anchor("Delete/index/{$row->OrderID}",' ','class="glyphicon glyphicon-trash btn-danger btn-xs"')?>
+ echo anchor("DeleteOrder/index/{$row->OrderID}",' ','class="glyphicon glyphicon-trash btn-danger btn-xs"')?>
 </td>
 </tr>
 <?php

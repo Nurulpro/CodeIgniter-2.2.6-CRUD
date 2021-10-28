@@ -29,10 +29,10 @@
 
          
             <a href="<?php echo site_url('insert'); ?>">
-                <button class="btn btn-primary"> Insert Data</button></a>
+                <button class="btn btn-primary">Create Users</button></a>
 
-                <a href="<?php echo site_url('insert'); ?>">
-                <button class="btn btn-primary"> Insert Data</button></a>
+                <a href="<?php echo site_url('Order'); ?>">
+                <button class="btn btn-primary">Orders</button></a>
 
 
             <div class="table-responsive">
