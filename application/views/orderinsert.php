@@ -16,8 +16,19 @@
         <div class="col-md-12">
             <h3>Insert Record | Create Order</h3>
             <hr />
+
+
+            <a href="<?php echo site_url('Read'); ?>">
+                <button class="btn btn-primary">Users</button></a>
+
+                <a href="<?php echo site_url('orders'); ?>">
+                <button class="btn btn-primary">Orders</button></a>
+
+
+            <div class="table-responsive">
+
+
         </div>
-    </div>
     <?php echo form_open('', ['name' => 'insertdata', 'autocomplete' => 'off']); ?>
     <div class="row">
         <div class="col-md-4"><b>user_id </b>

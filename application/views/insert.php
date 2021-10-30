@@ -18,6 +18,14 @@
             <hr />
         </div>
 
+        <a href="<?php echo site_url('Read'); ?>">
+                <button class="btn btn-primary">Users</button></a>
+
+                <a href="<?php echo site_url('Orderinsert'); ?>">
+                <button class="btn btn-primary"> Create Order</button></a>
+
+
+            <div class="table-responsive">
 
     
     </div>
